@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'segoe ui';
+}
+
+
+.body {
+  min-height: 235vh;
+  background-image: url('bgimg.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: rgb(26, 25, 25);
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.tagline{
+  color: white;
+  font-size: 110px;
+  text-align: justify;
+  position: relative;
+  top: 180px;
+  margin-left: 100px;
+}
+
+.tagline2{
+  color: white;
+  font-size: 30px;
+  text-align: lelft;
+  position: relative;
+  top: 190px;
+  margin-left: 100px;
+} 
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background:  rgba(41, 39, 39, 0.95);
+  z-index: 9999; 
+}
+
+.logo img {
+  position: relative; 
+  z-index: 1;         
+}
+
+.navbar {
+  position: relative;
+  z-index: 2;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  float: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: hsl(0, 0%, 40%);
+  border-radius: 5px;
+}
+
+
+footer {
+  text-align: right;
+  padding: 50px;
+  background-color: rgb(26, 25, 25);
+  color: white;
+  margin-top: auto;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-top: 1px solid white;
+}
+
+footer p {
+  position: relative;
+  top: 60px;
+  left: 50px;
+}
+
+footer p1 {
+  position: relative;
+  top: 40px;
+  bottom: 1%;
+  left: 50px;
+}
+
+footer ul{
+  list-style-type: none;
+  margin: 5px;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer li {
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px; 
+  text-align: left;
+  font-size: 20px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 30px;
+  background-color: rgb(15, 15, 15);
+  border: 1 white;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Segoe UI';
+  padding: 70px;
+  width: 550px;
+  cursor: pointer;
+  overflow: hidden; 
+  position: relative;
+  top: 550px;
+  left: 125px;
+}
+
+.button span {
+  display: inline-block;
+  position: relative;
+  transition: padding-right 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  right: -20px; 
+  transition: right 0.5s, opacity 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button2 {
+  display: inline-block;
+  border-radius: 30px;
+  background-color: rgb(15, 15, 15);
+  border: 1 white;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 70px;
+  width: 550px;
+  cursor: pointer;
+  overflow: hidden; 
+  position: relative;
+  top: 560px;
+  left: 125px;
+}
+
+.button2 span {
+  display: inline-block;
+  position: relative;
+  transition: padding-right 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  right: -12px; 
+  transition: right 0.5s, opacity 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.p2{
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  position: relative;
+  top: 510px;
+  line-height: 1.6;
+}
+
+.p1{
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  top: 500px;
+}
+
+.button3 {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: auto;          
+  max-width: 200px;      
+  cursor: pointer;
+  position: relative;
+  top: 210px;
+  margin-left: 100px;      
+  border-radius: 5px;    
+}
+
+.button3:hover {
+  background-color: white;
+  color: black;
+}
